@@ -1,12 +1,15 @@
 {
-  "name": "mod2-feature4",
+  "name": "mod2-feature5",
   "version": "1.0.0",
-  "description": "Module 2 - Sprint 10 - Feature 4 - Autenticación + Autorización + Seguridad",
+  "description": "Module 2 - Sprint 11 - Feature 5 - MongoDB y Jest",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node --watch --env-file=src/config/.env src/server.js",
-    "test": "node --env-file=src/config/.env tests/products.service.test.js"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "keywords": [],
   "author": "",
