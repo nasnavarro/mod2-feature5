@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch --env-file=.env src/server.js",
-    "test": "node --env-file=.env tests/products.service.test.js"
+    "start": "node --watch --env-file=src/config/.env src/server.js",
+    "test": "node --env-file=src/config/.env tests/products.service.test.js"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +22,9 @@
     "express": "5.2.1",
     "express-rate-limit": "8.5.2",
     "helmet": "8.2.0",
-    "jsonwebtoken": "9.0.3"
+    "jest": "^30.4.2",
+    "jsonwebtoken": "9.0.3",
+    "mongoose": "^9.6.3"
   },
   "devDependencies": {
     "prisma": "7.8.0"
